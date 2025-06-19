@@ -1,12 +1,26 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React from 'react';
+import Hero from '../components/Hero';
+import Services from '../components/Services';
+import Gallery from '../components/Gallery';
+import Profile from '../components/Profile';
+import Testimonials from '../components/Testimonials';
+import Coverage from '../components/Coverage';
+import Contact from '../components/Contact';
+import WhatsAppButton from '../components/WhatsAppButton';
+import './Index.css';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="index-container">
+      <Hero />
+      <Services />
+      <Gallery />
+      <Profile />
+      <Testimonials />
+      <Coverage />
+      <Contact />
+      <WhatsAppButton />
     </div>
   );
 };
